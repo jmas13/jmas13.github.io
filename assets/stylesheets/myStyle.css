@@ -3173,7 +3173,8 @@ tbody.collapse.in {
   border-left: 4px solid transparent; }
 
 .dropup,
-.dropdown {
+.dropdown,
+.contact {
   position: relative; }
 
 .dropdown-toggle:focus {
@@ -3270,13 +3271,15 @@ tbody.collapse.in {
   left: auto; }
 
 .dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
+.navbar-fixed-bottom .dropdown .caret,
+.navbar-fixed-bottom .contact .caret {
   border-top: 0;
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
   content: ""; }
 .dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
+.navbar-fixed-bottom .dropdown .dropdown-menu,
+.navbar-fixed-bottom .contact .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px; }
@@ -3630,7 +3633,7 @@ tbody.collapse.in {
     .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
       text-align: center;
       margin-bottom: 5px; }
-  .nav-justified > .dropdown .dropdown-menu {
+  .nav-justified > .dropdown .dropdown-menu, .nav-justified > .contact .dropdown-menu {
     top: auto;
     left: auto; }
   @media (min-width: 768px) {
@@ -4707,7 +4710,7 @@ button.list-group-item-danger {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px; }
-  .panel-heading > .dropdown .dropdown-toggle {
+  .panel-heading > .dropdown .dropdown-toggle, .panel-heading > .contact .dropdown-toggle {
     color: inherit; }
 
 .panel-title {
@@ -5795,5 +5798,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  background-color: #f9f9f9;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
 
 /*# sourceMappingURL=myStyle.css.map */
