@@ -3,15 +3,22 @@
   <head>
     <title>JSM Resume</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/stylesheets/myStyle.css">
   </head>
-  <body>
+  <body class="container">
     <header>
       <h1> John Stoddard Master</h1>
-      <ul>
-        <li>4501 Arlington Blvd. Apt. 618 Arlington, VA 22203</li>
-        <li>(202)460-3450</li>
-        <li>john.s.master@gmail.com</li>
-      </ul>
+      <div class="contact-dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li>4501 Arlington Blvd. Apt. 618 Arlington, VA 22203</li>
+          <li>(202)460-3450</li>
+          <li>john.s.master@gmail.com</li>
+        </ul>
+      </div>
     </header>
     <main>
       <div class="education">
@@ -103,7 +110,7 @@
           <li>Java</li>
           <li>OCaml</li>
         </ul>
-        
+
         <h3>Communication</h3>
         <ul>
           <li>Strong verbal and writing skills</li>
